@@ -131,6 +131,7 @@ AI_Transcriber/
 ├── setup.py
 ├── requirements_win.txt
 ├── requirements_mac.txt
+├── LICENSE
 ├── ffmpeg  (or ffmpeg.exe on Windows)
 ├── venv_mac/                   ← created by setup.py on Mac
 ├── venv_win/                   ← created by setup.py on Windows
@@ -264,7 +265,7 @@ For the fellow coders and makers out there, here is how AI Transcriber was built
 * **Lucy (The Cavachon Puppy):**
 ***Chief Wellness Officer & Director of Mandatory Breaks***
     * Thank you for ensuring I maintained healthy circulation by interrupting my deep coding sessions with urgent requests for play.
-* **License:** Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
+* **License:** [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International](LICENSE).
 
 ---
 
