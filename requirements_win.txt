@@ -1,0 +1,9 @@
+# Windows dependencies for generic_transcriber.py
+# Uses openai-whisper Python package (whisper.cpp not supported on Windows)
+
+openai-whisper
+
+# CPU-only PyTorch (default — works on any Windows machine).
+# For NVIDIA GPU acceleration instead, run manually:
+#   pip install torch --index-url https://download.pytorch.org/whl/cu121
+torch
