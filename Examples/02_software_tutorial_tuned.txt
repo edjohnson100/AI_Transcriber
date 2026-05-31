@@ -1,0 +1,18 @@
+Alright, let's walk through how to transcribe your first file using AITranscriber.
+First, make sure your virtual environment is activated.
+On Windows, run venv-win-scripts-activate in your terminal.
+On Mac, it's source venv-mac-bin-activate.
+Once you're in, type python-ai-transcriber.py and hit enter.
+Descript will scan your current folder and list any audio or video files it finds.
+If you have multiple files, you can type A to process all of them at once,
+or enter the number next to the file you want to start with.
+On Windows, you will see a model selection menu first.
+I recommend starting with Turbo.
+It gives you the best balance of speed and accuracy without requiring a huge amount of RAM.
+Descript extracts the audio track using FFmpeg, runs it through Whisper,
+and saves your chosen output format alongside the original file.
+You can pick VTT for subtitle players, SRT for editors like DaVinci Resolve or Premiere,
+plain text for reading or feeding into an LLM,
+or all to get all three at once.
+The default is all, so if you just hit enter at the format menu, you get everything.
+That's it. Pretty straightforward once the environment is set up.

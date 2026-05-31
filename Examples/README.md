@@ -13,11 +13,13 @@ This folder contains recording scripts and their resulting transcription outputs
 ```bash
 python ai_transcriber.py "your_recording.m4a"
 ```
-Rename the output files to `*_no_prompt.vtt` / `*_no_prompt.txt` before the second run.
+Rename the output files to `*_no_prompt.vtt` / `*_no_prompt.srt` / `*_no_prompt.txt` before the second run.
 
 **Run with the tuned prompt:** paste the provided prompt into `INITIAL_PROMPT`, then run again.
 
-5. Drop all four output files (two `.vtt`, two `.txt`) into this folder alongside the script.
+> Note: The tuned prompts used for these example outputs are already included as commented templates in `ai_transcriber.py` under the `EXAMPLE INITIAL PROMPTS` section. Uncomment one to use it directly.
+
+5. Drop all six output files (two `.vtt`, two `.srt`, two `.txt`) into this folder alongside the script.
 
 ---
 

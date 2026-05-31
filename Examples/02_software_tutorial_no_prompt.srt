@@ -1,0 +1,152 @@
+1
+00:00:00,000 --> 00:00:05,000
+Alright, let's walk through how to transcribe your first file using AITranscriber.
+
+2
+00:00:05,000 --> 00:00:08,000
+First, make sure your virtual environment is activated.
+
+3
+00:00:08,000 --> 00:00:15,000
+On Windows, run venv-win-scripts-activate in your terminal.
+
+4
+00:00:15,000 --> 00:00:23,000
+On Mac, it's source venv-mac-bin-activate.
+
+5
+00:00:23,000 --> 00:00:30,000
+Once you're in, type python-ai-transcriber.py and hit enter.
+
+6
+00:00:30,000 --> 00:00:34,000
+The script will scan your current folder and list any audio or video files it finds.
+
+7
+00:00:34,000 --> 00:00:39,000
+If you have multiple files, you can type A to process all of them at once,
+
+8
+00:00:39,000 --> 00:00:42,000
+or enter the number next to the file you want to start with.
+
+9
+00:00:42,000 --> 00:00:46,000
+On Windows, you will see a model selection menu first.
+
+10
+00:00:46,000 --> 00:00:48,000
+I recommend starting with Turbo.
+
+11
+00:00:48,000 --> 00:00:53,000
+It gives you the best balance of speed and accuracy without requiring a huge amount of RAM.
+
+12
+00:00:53,000 --> 00:00:58,000
+The script extracts the audio track using FFmpeg, runs it through Whisper,
+
+13
+00:00:58,000 --> 00:01:03,000
+and saves your chosen output format alongside the original file.
+
+14
+00:01:03,000 --> 00:01:10,000
+You can pick VTT for subtitle players, SRT for editors like DaVinci Resolve or Premiere,
+
+15
+00:01:10,000 --> 00:01:15,000
+plain text for reading or feeding into an LLM, or ALL to get all three at once.
+
+16
+00:01:15,000 --> 00:01:20,000
+The default is ALL, so if you just hit enter at the format menu, you get everything.
+
+17
+00:01:20,000 --> 00:01:21,000
+That's it.
+
+18
+00:01:21,000 --> 00:01:24,000
+Pretty straightforward once the environment is set up.
+
+19
+00:01:24,000 --> 00:01:25,000
+You can click on the link.
+
+20
+00:01:25,000 --> 00:01:26,000
+You can click on the link.
+
+21
+00:01:26,000 --> 00:01:27,000
+You can click on the link.
+
+22
+00:01:27,000 --> 00:01:28,000
+You can click on the link.
+
+23
+00:01:28,000 --> 00:01:29,000
+You can click on the link.
+
+24
+00:01:29,000 --> 00:01:30,000
+You can click on the link.
+
+25
+00:01:30,000 --> 00:01:31,000
+You can click on the link.
+
+26
+00:01:31,000 --> 00:01:32,000
+You can click on the link.
+
+27
+00:01:32,000 --> 00:01:33,000
+You can click on the link.
+
+28
+00:01:33,000 --> 00:01:34,000
+You can click on the link.
+
+29
+00:01:34,000 --> 00:01:35,000
+You can click on the link.
+
+30
+00:01:35,000 --> 00:01:36,000
+You can click on the link.
+
+31
+00:01:36,000 --> 00:01:37,000
+You can click on the link.
+
+32
+00:01:37,000 --> 00:01:38,000
+You can click on the link.
+
+33
+00:01:38,000 --> 00:01:39,000
+You can click on the link.
+
+34
+00:01:39,000 --> 00:01:40,000
+You can click on the link.
+
+35
+00:01:40,000 --> 00:01:41,000
+You can click on the link.
+
+36
+00:01:41,000 --> 00:01:43,000
+You can click on the link.
+
+37
+00:01:43,000 --> 00:01:44,000
+You can click on the link.
+
+38
+00:01:44,000 --> 00:01:45,000
+You can click on the link.
+

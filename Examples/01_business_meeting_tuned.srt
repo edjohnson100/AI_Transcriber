@@ -1,0 +1,20 @@
+1
+00:00:00,000 --> 00:00:17,160
+OK everyone, let me give you a quick update on where we stand heading into Q3. So, we wrapped up the Salesforce integration last week. Big win for the team. The data is now flowing cleanly into the pipeline, and our KPIs are looking much stronger than they did at the Q2 review.
+
+2
+00:00:17,160 --> 00:00:29,160
+On the Jira board, we got three OKRs still in progress. The first two are on track to close by end of sprint. The third, the stakeholder report dashboard, has slipped a bit.
+
+3
+00:00:29,160 --> 00:00:35,159
+We're working with the UX team to finalize the wireframes, and I'm expecting sign-off by Thursday.
+
+4
+00:00:35,159 --> 00:00:46,159
+For action items coming out today, Sarah needs to update the Confluence page with the new workflow, and Marcus should loop in DevOps about the staging environment before we push to production.
+
+5
+00:00:46,159 --> 00:00:51,159
+I'll drop a full written summary in Slack by end of the day. Any questions before we move on?
+

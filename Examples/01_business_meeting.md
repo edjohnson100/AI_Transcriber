@@ -51,8 +51,10 @@ After transcribing, save your outputs here with these names:
 | File | Description |
 |------|-------------|
 | `01_business_meeting_no_prompt.vtt` | Transcribed with `INITIAL_PROMPT = ""` |
+| `01_business_meeting_no_prompt.srt` | Transcribed with `INITIAL_PROMPT = ""` |
 | `01_business_meeting_no_prompt.txt` | Transcribed with `INITIAL_PROMPT = ""` |
 | `01_business_meeting_tuned.vtt` | Transcribed with the prompt above |
+| `01_business_meeting_tuned.srt` | Transcribed with the prompt above |
 | `01_business_meeting_tuned.txt` | Transcribed with the prompt above |
 
 ## What to Look For

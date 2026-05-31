@@ -1,0 +1,20 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:05.000
+Okay, everyone, let me give you a quick update on where we stand heading into Q3.
+
+00:00:05.000 --> 00:00:17.160
+So, we wrapped up the Salesforce integration last week. Big win for the team. The data is now flowing cleanly into the pipeline, and our KPIs are looking much stronger than they did at the Q2 review.
+
+00:00:17.980 --> 00:00:28.580
+On the JIRA board, we got three OKRs still in progress. The first two are on track to close by end of sprint. The third, the stakeholder report dashboard, has slipped a bit.
+
+00:00:29.120 --> 00:00:34.500
+We're working with the UX team to finalize the wireframes, and I'm expecting sign-off by Thursday.
+
+00:00:35.000 --> 00:00:45.159
+For action items coming out today, Sarah needs to update the Confluence page with the new workflow, and Marcus should loop in DevOps about the staging environment before we push to production.
+
+00:00:45.820 --> 00:00:51.079
+I'll drop a full written summary in Slack by end of day. Any questions before we move on?
+

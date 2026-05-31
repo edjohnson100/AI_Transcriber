@@ -1,0 +1,56 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:04.299
+Alright, let's walk through how to transcribe your first file using AITranscriber.
+
+00:00:04.820 --> 00:00:07.560
+First, make sure your virtual environment is activated.
+
+00:00:08.140 --> 00:00:14.980
+On Windows, run venv-win-scripts-activate in your terminal.
+
+00:00:15.640 --> 00:00:22.400
+On Mac, it's source venv-mac-bin-activate.
+
+00:00:22.820 --> 00:00:29.480
+Once you're in, type python-ai-transcriber.py and hit enter.
+
+00:00:30.000 --> 00:00:34.140
+Descript will scan your current folder and list any audio or video files it finds.
+
+00:00:34.799 --> 00:00:38.920
+If you have multiple files, you can type A to process all of them at once,
+
+00:00:39.519 --> 00:00:42.200
+or enter the number next to the file you want to start with.
+
+00:00:42.719 --> 00:00:45.679
+On Windows, you will see a model selection menu first.
+
+00:00:46.600 --> 00:00:48.000
+I recommend starting with Turbo.
+
+00:00:48.700 --> 00:00:52.840
+It gives you the best balance of speed and accuracy without requiring a huge amount of RAM.
+
+00:00:53.760 --> 00:00:58.640
+Descript extracts the audio track using FFmpeg, runs it through Whisper,
+
+00:00:58.640 --> 00:01:02.679
+and saves your chosen output format alongside the original file.
+
+00:01:03.299 --> 00:01:09.260
+You can pick VTT for subtitle players, SRT for editors like DaVinci Resolve or Premiere,
+
+00:01:10.159 --> 00:01:13.040
+plain text for reading or feeding into an LLM,
+
+00:01:13.420 --> 00:01:15.120
+or all to get all three at once.
+
+00:01:15.740 --> 00:01:19.700
+The default is all, so if you just hit enter at the format menu, you get everything.
+
+00:01:19.700 --> 00:01:24.000
+That's it. Pretty straightforward once the environment is set up.
+

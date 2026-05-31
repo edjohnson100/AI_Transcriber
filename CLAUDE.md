@@ -28,7 +28,7 @@ Dependencies are in `requirements_win.txt` (openai-whisper, torch) and `requirem
 
 ## Architecture
 
-**`ai_transcriber.py`** — Single user-facing script. At startup it checks for a compiled `whisper.cpp` binary (`whisper.cpp/build/bin/whisper-cli`). If found (Mac), it routes transcription through the C++ binary. If not (Windows, or Mac without the build), it falls back to the `openai-whisper` Python package. In both cases, FFmpeg extracts audio to a 16kHz mono WAV first, then Whisper processes that file. Outputs both `.vtt` (WebVTT) and `.txt` (`[H:MM:SS -> H:MM:SS]`) alongside the source file.
+**`ai_transcriber.py`** — Single user-facing script. At startup it checks for a compiled `whisper.cpp` binary (`whisper.cpp/build/bin/whisper-cli`). If found (Mac), it routes transcription through the C++ binary. If not (Windows, or Mac without the build), it falls back to the `openai-whisper` Python package. In both cases, FFmpeg extracts audio to a 16kHz mono WAV first, then Whisper processes that file. At the start of each session the user selects an output format: `.vtt` (WebVTT), `.srt` (SubRip), `.txt` (plain text, no timestamps), or All (default). Selected files are saved alongside the source file.
 
 **`transcribe_base.py` / `transcribe_timestamps.py`** — Minimal reference examples with hardcoded filenames. Not user-facing.
 
@@ -39,6 +39,8 @@ Dependencies are in `requirements_win.txt` (openai-whisper, torch) and `requirem
 - `WHISPER_EXEC` / `MODEL_PATH` / `VAD_MODEL_PATH` — Paths to the whisper.cpp binary and models (Mac only).
 - `PYTHON_MODELS` / `DEFAULT_PYTHON_MODEL` — Model menu options for the Python fallback path.
 - `WHISPER_CPP_AVAILABLE` — Computed at import time; controls which engine is used.
+- `ALL_FORMATS` — `{'vtt', 'srt', 'txt'}` — the full set returned when the user selects All.
+- `select_output_format()` — Interactive menu presented at the start of every session; returns a subset of `ALL_FORMATS`.
 
 ## Whisper Parameters (Python path)
 

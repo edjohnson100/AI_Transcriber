@@ -21,6 +21,13 @@ IS_MAC     = platform.system() == "Darwin"
 VENV_NAME  = "venv_mac" if IS_MAC else "venv_win"
 REQS_FILE  = "requirements_mac.txt" if IS_MAC else "requirements_win.txt"
 
+# Use the venv Python to invoke pip as a module — avoids Windows file-lock
+# errors that occur when pip.exe tries to overwrite itself during an upgrade.
+VENV_PYTHON = (
+    os.path.join(VENV_NAME, "bin", "python")
+    if IS_MAC else
+    os.path.join(VENV_NAME, "Scripts", "python.exe")
+)
 PIP = (
     os.path.join(VENV_NAME, "bin", "pip")
     if IS_MAC else
@@ -51,9 +58,9 @@ def main():
     else:
         print(f"Virtual environment '{VENV_NAME}' already exists — skipping creation.")
 
-    # Upgrade pip
+    # Upgrade pip via `python -m pip` to avoid Windows file-lock errors
     print("\nUpgrading pip...")
-    run([PIP, "install", "--upgrade", "pip"])
+    run([VENV_PYTHON, "-m", "pip", "install", "--upgrade", "pip"])
 
     # Install project requirements
     print(f"\nInstalling from {REQS_FILE}...")

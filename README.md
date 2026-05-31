@@ -213,6 +213,8 @@ Long recordings (1 hour+) can take several minutes even on fast hardware. The te
 **Customizing the initial prompt**
 Edit `INITIAL_PROMPT` at the top of `ai_transcriber.py` to prime Whisper with domain-specific vocabulary, speaker names, or punctuation preferences. This meaningfully improves accuracy for specialized or technical content.
 
+The repo already includes commented example prompts in `ai_transcriber.py` for the business meeting and software tutorial cases. Uncomment one of those templates to use a tested prompt directly, or replace it with your own.
+
 A good prompt briefly describes the context and the vocabulary Whisper is likely to encounter. Mention specific terms, product names, or abbreviations it might mishear, and tell it the tone you want for punctuation and capitalization. One or two sentences is usually enough.
 
 *Business Zoom meeting:*

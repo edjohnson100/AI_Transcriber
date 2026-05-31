@@ -42,11 +42,12 @@ Turbo — it gives you the best balance of speed and accuracy without requiring
 a huge amount of RAM.
 
 The script extracts the audio track using FFmpeg, runs it through Whisper, and
-saves two output files: a dot-vtt file in WebVTT format for subtitle players,
-and a dot-txt file with timestamped text you can read directly in any editor.
+saves your chosen output format alongside the original file. You can pick VTT
+for subtitle players, SRT for editors like DaVinci Resolve or Premiere, plain
+TXT for reading or feeding into an LLM, or All to get all three at once.
 
-Both files are saved alongside your original recording. That's it — pretty
-straightforward once the environment is set up.
+The default is All, so if you just hit Enter at the format menu you'll get
+everything. That's it — pretty straightforward once the environment is set up.
 
 ---
 
@@ -57,8 +58,10 @@ After transcribing, save your outputs here with these names:
 | File | Description |
 |------|-------------|
 | `02_software_tutorial_no_prompt.vtt` | Transcribed with `INITIAL_PROMPT = ""` |
+| `02_software_tutorial_no_prompt.srt` | Transcribed with `INITIAL_PROMPT = ""` |
 | `02_software_tutorial_no_prompt.txt` | Transcribed with `INITIAL_PROMPT = ""` |
 | `02_software_tutorial_tuned.vtt` | Transcribed with the prompt above |
+| `02_software_tutorial_tuned.srt` | Transcribed with the prompt above |
 | `02_software_tutorial_tuned.txt` | Transcribed with the prompt above |
 
 ## What to Look For

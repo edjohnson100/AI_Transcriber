@@ -26,6 +26,18 @@ from pathlib import Path
 # Prime the Whisper model with vocabulary, context, or punctuation style.
 INITIAL_PROMPT = "Hello everyone! Welcome to our session. Please maintain professional capitalization and punctuation throughout."
 
+# ==============================================================================
+# EXAMPLE INITIAL PROMPTS (uncomment one to use)
+# These are the prompts that were used to generate the example outputs
+#  in the README, but feel free to customize or write your own!
+# ==============================================================================
+
+#INITIAL_PROMPT = ""
+
+#INITIAL_PROMPT = "This is a recorded business meeting. Attendees are discussing Q3 results, OKRs,project roadmaps, and action items. Speakers may reference tools like Salesforce,Jira, Slack, Confluence, and DevOps pipelines. Use professional capitalizationand punctuation throughout."
+
+#INITIAL_PROMPT = "This is a software tutorial video. The presenter walks through step-by-stepinstructions using technical terminology, file paths, and command-line tools.References include Python, Whisper, FFmpeg, virtual environments, and VTT files.Preserve exact capitalization for all product names, commands, and technical terms."
+
 MEDIA_EXTENSIONS = {'.mp4', '.m4a', '.wav', '.mp3', '.mkv', '.mov', '.flv', '.aac'}
 
 SCRIPT_DIR = Path(__file__).parent.resolve()
