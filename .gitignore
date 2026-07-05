@@ -98,4 +98,5 @@ Installers/Output/
 *.step
 *.stp
 *.f3d
-*.3mfAGENTS.md
+*.3mf
+AGENTS.md
